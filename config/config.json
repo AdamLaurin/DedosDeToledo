@@ -32,7 +32,7 @@
 		},
 		{
 			"name": "backdrop",
-			"path": "./assets/images/backdrop.png",
+			"path": "./assets/images/Backdrop.png",
 			"width": 480,
 			"height": 270
 		},

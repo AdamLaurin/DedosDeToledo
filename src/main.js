@@ -84,7 +84,11 @@ const game = new Game(
 	canvas.height
 );
 
-game.start();
+document.addEventListener("click", () => {
+	document.getElementById("startScreen").style.display = "none";
 
-// Focus the canvas so that the player doesn't have to click on it.
-canvas.focus();
+	game.start();
+
+	// Focus the canvas so that the player doesn't have to click on it.
+	canvas.focus();
+}, { once: true });
