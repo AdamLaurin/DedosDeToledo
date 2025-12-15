@@ -1,4 +1,4 @@
-# DedosDeToledo
+# DadosDeToledo
 
 This project is a game inspired be real, historical dice games described in the 13th century Spanish work by king Alfonso X of Castile, *Libro de los juegos* (Book of Games) or *Libro de axedrez, dados e tablas* (Book of Chess, Dice, and Tables).  
 The games recreated are Riffa, Triga, and Panquist, three simple games of chance which each make use of three dice.  
