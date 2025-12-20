@@ -16,6 +16,9 @@ export default class ParConAs extends DiceGame {
      */
     constructor(player, opponent) {
         super(player, opponent);
+
+        // We don't care about the dice total in this game.
+        this.enableDiceTotalDisplay = false;
     }
 
     checkRoll() {
@@ -27,7 +30,8 @@ export default class ParConAs extends DiceGame {
             stateStack.push(new ShowResultState(resultMessage));
             sounds.play(SoundName.GoldSack);
         } else {
-            this.isPlayerTurn = -(this.isPlayerTurn);
+            this.isPlayerTurn = !this.isPlayerTurn;
+            this.gamePhase = GamePhase.ToRoll;
         }
     }
 
