@@ -1,7 +1,8 @@
 const DiceGameName = {
     Riffa: "riffa",
     Triga: "triga",
-    Panquist: "panquist"
+    Panquist: "panquist",
+    ParConAs: "parConAs"
 };
 
 export default DiceGameName;

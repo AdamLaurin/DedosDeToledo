@@ -1,9 +1,10 @@
 import Character from "../entities/Character.js";
 import Opponent from "../entities/Opponent.js";
-import DiceGameName from "../enums/DiceGameName.js";    
+import DiceGameName from "../enums/DiceGameName.js";
 import Riffa from "../objects/games/Riffa.js";
 import Triga from "../objects/games/Triga.js";
 import Panquist from "../objects/games/Panquist.js";
+import ParConAs from "../objects/games/ParConAs.js";
 
 export default class DiceGameFactory {
     /**
@@ -21,6 +22,8 @@ export default class DiceGameFactory {
                 return new Triga(player, opponent);
             case DiceGameName.Panquist:
                 return new Panquist(player, opponent);
+            case DiceGameName.ParConAs:
+                return new ParConAs(player, opponent);
         }
     }
 }
